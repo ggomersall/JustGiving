@@ -5,7 +5,11 @@ const Header = () => {
 
   return (
     <div className="header__wrapper">
-      <h1>Just Giving App</h1>
+      <div className="container">
+        <div className="header__title">
+          <h1>Just Giving App</h1>
+        </div>
+      </div>
     </div>
   )
 }

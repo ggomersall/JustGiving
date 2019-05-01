@@ -1,0 +1,44 @@
+@import '../BaseStyles/mixins';
+@import '../BaseStyles/variables';
+
+.charity__section {
+  background: $white;
+}
+
+.charity-content__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  height: 300px;
+  .charity__logo img {
+    width: 200px;
+  }
+
+  .charity-description__wrapper {
+    .charity__title {
+      margin-bottom: 20px;
+    }
+    .charity__statement {
+      width: 400px;
+    }
+  }
+
+  .charity-button__wrapper {
+    display: flex;
+    flex-direction: column;
+    .btn {
+      margin-bottom: 15px;
+      font-family: 'Roboto',Arial,Helvetica,sans-serif;
+      letter-spacing: 1px;
+    }
+  }
+
+  .btn--orange {
+    @include btn--orange;
+  }
+  .btn--purple {
+    @include btn--purple;
+  }
+
+}
