@@ -12,6 +12,9 @@
       border-color: $purple;
       color: $purple;
     }
+    &:focus {
+      outline: 0;
+    }
     &.cared {
       background: $purple;
       color: $white;
