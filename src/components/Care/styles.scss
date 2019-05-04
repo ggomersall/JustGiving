@@ -1,0 +1,30 @@
+@import '../BaseStyles/variables';
+
+.care__wrapper {
+  display: flex;
+  font-size: 20px;
+  .care__button button{
+    border: 1px solid $darkgrey;
+    height: 40px;
+    width: 100px;
+    font-size: 20px;
+    &:hover {
+      border-color: $purple;
+      color: $purple;
+    }
+    &.cared {
+      background: $purple;
+      color: $white;
+    }
+  }
+
+  .care__totals span{
+    border: 1px solid $darkgrey;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 20px;
+    width: auto;
+    margin-left: 15px;
+  }
+}
