@@ -1,0 +1,127 @@
+{
+  "charityData": {
+    "name": "Macmillan Cancer Support",
+    "description": "We’re here to help everyone with cancer live life as fully as they can, providing physical, financial and emotional support. So whatever cancer throws your way, we’re right there with you.",
+    "logoUrl": "4cf848f3-9ca5-4f54-9250-216c74d58eb7.png",
+    "logoAbsoluteUrl": "https://images.justgiving.com/image/4cf848f3-9ca5-4f54-9250-216c74d58eb7.png",
+    "profilePageUrl": "https://www.justgiving.com/macmillan",
+    "registrationNumber": "261017",
+    "websiteUrl": "http://www.macmillan.org.uk",
+    "id": 2116,
+    "pageShortName": "macmillan",
+    "emailAddress": "fundraising@macmillan.org.uk",
+    "keywords": "MCR",
+    "dateAddedToJustGiving": "\/Date(1036700780000+0000)\/",
+    "thankyouMessage": "Thanks so much for your donation to Macmillan Cancer Support. Your support means an incredible amount to us.\r\n\r\nWe’re here to help everyone with cancer live life as fully as they can, providing physical, financial and emotional support. So whatever cancer throws your way, we’re right there with you. For information, support or just someone to talk to, call 0808 808 00 00 or visit macmillan.org.uk",
+    "mobileAppeals": [
+      {
+        "smsCode": "TAME16",
+        "name": "Tameside Macmillan Unit"
+      },
+      {
+        "smsCode": "MACM18",
+        "name": "Centaur Media"
+      }
+    ],
+    "categories": [
+      "Cancer"
+    ],
+    "donationDisplayAmounts": [
+      {
+        "amount": 3.00,
+        "description": "Can help answer questions on cancer and give support through our helpline",
+        "name": "£3.00",
+        "donationPromptType": "Monthly"
+      },
+      {
+        "amount": 25.00,
+        "description": "Can fund an hour on our support line, giving vital information and support",
+        "name": "£25.00",
+        "donationPromptType": "OneOff"
+      },
+      {
+        "amount": 5.00,
+        "description": "Can help provide counselling to someone dealing with the impact of cancer",
+        "name": "£5.00",
+        "donationPromptType": "Monthly"
+      },
+      {
+        "amount": 50.00,
+        "description": "Can ensure a Macmillan Nurse is there when someone is diagnosed with cancer",
+        "name": "£50.00",
+        "donationPromptType": "OneOff"
+      },
+      {
+        "amount": 10.00,
+        "description": "Can help to provide the one to one medical care which matters so much",
+        "name": "£10.00",
+        "donationPromptType": "Monthly"
+      },
+      {
+        "amount": 100.00,
+        "description": "Can provide benefit advice so people with cancer get the best deal possible",
+        "name": "£100.00",
+        "donationPromptType": "OneOff"
+      }
+    ],
+    "impactStatementWhat": "give you the support you need",
+    "impactStatementWhy": "live life as fully as you can",
+    "countryCode": "GB",
+    "currencyCode": "GBP",
+    "themeColour": {
+      "alpha": 255,
+      "red": 0,
+      "green": 162,
+      "blue": 70
+    },
+    "smsShortName": "Macmillan Cancer Support"
+  },
+  "donationsData": {
+    "donations": [
+      {
+        "amount": "5.0000",
+        "currencyCode": "GBP",
+        "donationDate": "2019-05-01T00:00:00",
+        "donorDisplayName": "Nicholas Eve",
+        "donorLocalAmount": "5.000000",
+        "donorLocalCurrencyCode": "GBP",
+        "estimatedTaxReclaim": "1.2500",
+        "imageUrl": "https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif",
+        "message": "Keep up the great help and support you give all of us patients"
+      },
+      {
+        "amount": "10.0000",
+        "currencyCode": "GBP",
+        "donationDate": "2019-05-01T00:00:00",
+        "donorDisplayName": "Dan Lewin",
+        "donorLocalAmount": "10.000000",
+        "donorLocalCurrencyCode": "GBP",
+        "estimatedTaxReclaim": "2.5000",
+        "imageUrl": "https://images.justgiving.com/image/f1e9879a-dace-443a-a453-d0636e66a348.jpg?template=profilesummary",
+        "message": "Keep up the good work"
+      },
+      {
+        "amount": "5.0000",
+        "currencyCode": "GBP",
+        "donationDate": "2019-05-01T00:00:00",
+        "donorDisplayName": "Kim Hammerton",
+        "donorLocalAmount": "5.000000",
+        "donorLocalCurrencyCode": "GBP",
+        "estimatedTaxReclaim": "1.2500",
+        "imageUrl": "https://images.justgiving.com/image/beedea67-1fe7-4ba8-80b1-fbf5dfa41131.jpg?template=profilesummary",
+        "message": "Such worthy cause, a service that many people will need in their lifetime. Having been blessed with their care on more than one occasion, I know what a brilliant comfort the service offers"
+      },
+      {
+        "amount": "30.0000",
+        "currencyCode": "GBP",
+        "donationDate": "2019-05-01T00:00:00",
+        "donorDisplayName": "Kim Clarke",
+        "donorLocalAmount": "30.000000",
+        "donorLocalCurrencyCode": "GBP",
+        "estimatedTaxReclaim": "7.5000",
+        "imageUrl": "https://www.justgiving.com/content/images/graphics/icons/avatars/facebook-avatar.gif",
+        "message": "I’m donating on behalf of my fantastic singing partner and friend Maria Barratt whom I love dearly and is raising funds for this fantastic charity Macmillan."
+      }
+    ]
+  }
+}

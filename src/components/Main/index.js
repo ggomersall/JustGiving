@@ -3,6 +3,7 @@ import React, {Component} from 'react';
 import Charity from '../Charity';
 import Donations from '../Donations';
 
+import './styles.scss';
 
 class Main extends Component {
   constructor(props) {

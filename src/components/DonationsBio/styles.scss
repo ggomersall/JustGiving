@@ -1,0 +1,29 @@
+@import '../BaseStyles/variables';
+
+.donation-bio__wrapper {
+  width: 50%;
+  border-bottom: 2px solid $grey;
+  margin-bottom: 15px;
+} 
+
+.donation-bio__header {
+  margin-bottom: 30px;
+  h2 {
+    margin-bottom: 20px;
+  }
+  h2, h3 {
+    font-weight: 300;
+  }
+}
+
+.donation-bio__contact {
+  p {
+    margin-bottom: 10px;
+    color: $darkgrey;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: inherit;
+    } 
+  }
+}

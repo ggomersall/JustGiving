@@ -14,18 +14,29 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.all([
-      axios.get(`https://api.justgiving.com/c3fa073b/v1/charity/2116`),
-      axios.get(`https://api.justgiving.com/c3fa073b/v1/charity/2116/donations`)
-    ])
-    .then(axios.spread((charity, donations) => {
+    // axios.all([
+    //   axios.get(`https://api.justgiving.com/c3fa073b/v1/charity/2116`),
+    //   axios.get(`https://api.justgiving.com/c3fa073b/v1/charity/2116/donations`)
+    // ])
+    // .then(axios.spread((charity, donations) => {
+    //   this.setState({
+    //     charityData: charity.data,
+    //     donationsData: donations.data
+    //   })
+    //   console.log(this.state)
+    // }))
+    // .catch(error => console.log(error));
+
+    axios.get(`./data.json`)
+    .then( res => {
+      const data = res.data;
+      console.log(data)
       this.setState({
-        charityData: charity.data,
-        donationsData: donations.data
+        charityData: data.charityData,
+        donationsData: data.donationsData
       })
-      console.log(this.state)
-    }))
-    .catch(error => console.log(error));
+    })
+    .catch(err=>console.log(err));
   }
 
   render() {
