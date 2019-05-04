@@ -1,0 +1,17 @@
+.card.donation {
+  min-height: 150px;
+}
+
+.item-donor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.item-donor__image {
+  margin-right: 20px;
+  img {
+    border-radius: 50%;
+    height: 50px;
+  }
+}
