@@ -1,8 +1,9 @@
 import React from 'react';
+import Care from '../Care';
 
 import './styles.scss';
 
-const Charity = ({ charity }) => {
+const Charity = ({ charity, likes, handleCareUpdate, care }) => {
   return (
     <div className="charity__section">
       <div className="charity-content__wrapper container">
@@ -12,6 +13,9 @@ const Charity = ({ charity }) => {
         <div className="charity-description__wrapper">
           <h2 className="charity__title">{charity.name}</h2>
           <h3 className="charity__statement">{`We ${charity.impactStatementWhat} to ${charity.impactStatementWhy}`}</h3>
+          <div className="charity__care">
+            <Care handleCareUpdate={handleCareUpdate} likes={likes} care={care}/>
+          </div>
         </div>
         <div className="charity-button__wrapper">
           <button className="btn btn--orange">Fundraise for us</button>

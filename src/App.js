@@ -30,11 +30,10 @@ class App extends Component {
     axios.get(`./data.json`)
     .then( res => {
       const data = res.data;
-      console.log(data)
       this.setState({
         charityData: data.charityData,
         donationsData: data.donationsData
-      })
+      }, console.log(this.state))
     })
     .catch(err=>console.log(err));
   }
