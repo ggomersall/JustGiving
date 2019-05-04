@@ -1,3 +1,5 @@
+@import '../BaseStyles/variables';
+
 .card.donation {
   min-height: 150px;
 }
@@ -14,4 +16,17 @@
     border-radius: 50%;
     height: 50px;
   }
+}
+
+.item-donor__donation {
+  .donor__name {
+    margin-bottom: 5px;
+  }
+  .donor__amount {
+    color: $darkgrey;
+  }
+}
+
+.donor__statement {
+  margin-bottom: 20px;
 }

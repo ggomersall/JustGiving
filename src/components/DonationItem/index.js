@@ -17,14 +17,17 @@ const DonationItem = ({ data }) => {
             {
               data.donorLocalAmount ?
                 <p className="donor__amount">
-                  <span>£{parseFloat(data.donorLocalAmount).toFixed(2)}</span>{data.estimatedTaxReclaim ? <span> + £{parseFloat(data.estimatedTaxReclaim).toFixed(2)}</span> : null}
+                  <span>£{parseFloat(data.donorLocalAmount).toFixed(2)}</span> 
+                  {
+                    data.estimatedTaxReclaim ? <span> + £{parseFloat(data.estimatedTaxReclaim).toFixed(2)} Gift Aid</span> : null
+                  }
                 </p> : null
             }
           </div>
         </div>
         {
           data.message ?
-          <div className="item__statement">
+          <div className="donor__statement">
             <p>
               "{data.message}"
             </p>
