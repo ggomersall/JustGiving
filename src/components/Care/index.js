@@ -9,7 +9,8 @@ const Care = ({likes, handleCareUpdate, care}) => {
         <button className={classNames({'cared': care != false})} onClick={handleCareUpdate}>{care === false ? 'Care' : 'I care'}</button>
       </div>
       <div className="care__totals">
-        <span>{likes}</span>
+        <span className="arrow__left"></span>
+        <span className="bordered">{likes}</span>
       </div>
     </div>
   )

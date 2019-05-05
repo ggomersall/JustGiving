@@ -20,8 +20,24 @@
       color: $white;
     }
   }
+  .care__totals {
+    position: relative;
+  }
 
-  .care__totals span{
+  .care__totals .arrow__left {
+    top: 14px;
+    position: absolute;
+    z-index: 11;
+    height: 0;
+    width: 0;
+    border: unset;
+    border-top: 5px solid transparent;
+    border-right: 6px solid #737373;
+    border-bottom: 5px solid transparent;
+    left: 9px;
+  }
+
+  .care__totals .bordered{
     border: 1px solid $darkgrey;
     display: block;
     height: 38px;
