@@ -33,7 +33,7 @@ class App extends Component {
       this.setState({
         charityData: data.charityData,
         donationsData: data.donationsData
-      }, console.log(this.state))
+      })
     })
     .catch(err=>console.log(err));
   }

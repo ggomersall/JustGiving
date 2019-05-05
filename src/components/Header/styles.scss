@@ -8,8 +8,9 @@
   .container, .header__title, .header__title h1 {
     height: 100%;
   }
-  .header__title h1 {
+  .header__title img {
     display:flex;
-    align-items: center;
+    height: 60%;
+    padding: 12px 0;
   }
 }

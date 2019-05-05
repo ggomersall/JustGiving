@@ -18,9 +18,9 @@ class Main extends Component {
   handleCareUpdate() {
     if (this.state.care === false) {
 
-      this.setState({ likes: this.state.likes + 1, care: !this.state.care }, console.log(this.state))
+      this.setState({ likes: this.state.likes + 1, care: !this.state.care })
     } else {
-      this.setState({likes: this.state.likes - 1, care: !this.state.care }, console.log(this.state))
+      this.setState({likes: this.state.likes - 1, care: !this.state.care })
     }
   }
 

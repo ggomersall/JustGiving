@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '../../images/logo.svg';
+
 import './styles.scss'
 
 const Header = () => {
@@ -7,7 +9,7 @@ const Header = () => {
     <div className="header__wrapper">
       <div className="container">
         <div className="header__title">
-          <h1>Just Giving App</h1>
+          <img src={logo} />
         </div>
       </div>
     </div>
