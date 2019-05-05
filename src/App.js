@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { API_APP_ID, API_CHARITY_ID } from './constants';
 
 import Header from './components/Header';
 import Main from './components/Main';
@@ -17,8 +18,8 @@ class App extends Component {
 
   componentDidMount() {
     axios.all([
-      axios.get('https://api.justgiving.com/c3fa073b/v1/charity/2116'),
-      axios.get('https://api.justgiving.com/c3fa073b/v1/charity/2116/donations')
+      axios.get(`https://api.justgiving.com/${API_APP_ID}/v1/charity/${API_CHARITY_ID}`),
+      axios.get(`https://api.justgiving.com/${API_APP_ID}/v1/charity/${API_CHARITY_ID}/donations`)
     ])
       .then(axios.spread((charity, donations) => {
         this.setState({
@@ -32,16 +33,6 @@ class App extends Component {
         // eslint-disable-next-line no-console
         console.log(error);
       });
-
-    // axios.get(`./data.json`)
-    // .then( res => {
-    //   const data = res.data;
-    //   this.setState({
-    //     charityData: data.charityData,
-    //     donationsData: data.donationsData
-    //   })
-    // })
-    // .catch(err=>console.log(err));
   }
 
   render() {
