@@ -7,3 +7,5 @@ describe('First React component test with Enzyme', () => {
     shallow(<App />);
   });
 });
+
+expect(<App />).toMatchSnapshot();
