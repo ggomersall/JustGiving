@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Header from './components/Header';
 import Main from './components/Main';
+import Loading from './components/Loading';
 
 import './App.scss';
 
@@ -27,7 +28,6 @@ class App extends Component {
           donationsData: donations.data,
           isLoading: !this.state.isLoading
         });
-        console.log(this.state);
       }))
       .catch(error => console.log(error));
 
@@ -46,14 +46,13 @@ class App extends Component {
   render() {
     const { charityData, donationsData, isLoading } = this.state;
     return (
-      isLoading ? <span>Loading</span> :
-        <div className="components__wrapper">
-          <Header />
-          {
-            charityData && donationsData
-            && <Main charityData={charityData} donationsData={donationsData} />
-          }
-        </div>
+      <div className="components__wrapper">
+        <Header />
+        {
+          isLoading ? <Loading loading={isLoading}/> :
+            <Main charityData={charityData} donationsData={donationsData} />
+        }
+      </div>
     );
   }
 }
