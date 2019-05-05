@@ -12,6 +12,8 @@ to install dependancies -- `$ yarn`
 
 to start the project -- `$ yarn start`
 
+to run tests -- `$ yarn test`
+
 ***********
 
 ### Project Setup:
