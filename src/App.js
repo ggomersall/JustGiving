@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import axios from 'axios';
 
 import Header from './components/Header';
@@ -8,9 +8,8 @@ import Loading from './components/Loading';
 import './App.scss';
 
 class App extends Component {
-
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       isLoading: true
     };
@@ -18,18 +17,21 @@ class App extends Component {
 
   componentDidMount() {
     axios.all([
-      axios.get(`https://api.justgiving.com/c3fa073b/v1/charity/2116`),
-      axios.get(`https://api.justgiving.com/c3fa073b/v1/charity/2116/donations`)
+      axios.get('https://api.justgiving.com/c3fa073b/v1/charity/2116'),
+      axios.get('https://api.justgiving.com/c3fa073b/v1/charity/2116/donations')
     ])
-    .then(axios.spread((charity, donations) => {
-      this.setState({
-        charityData: charity.data,
-        donationsData: donations.data,
-        isLoading: !this.state.isLoading
-      })
-      console.log(this.state)
-    }))
-    .catch(error => console.log(error));
+      .then(axios.spread((charity, donations) => {
+        this.setState({
+          charityData: charity.data,
+          donationsData: donations.data,
+          isLoading: !this.state.isLoading
+        });
+      }))
+      .catch(error => {
+
+        // eslint-disable-next-line no-console
+        console.log(error);
+      });
 
     // axios.get(`./data.json`)
     // .then( res => {
@@ -43,18 +45,17 @@ class App extends Component {
   }
 
   render() {
-
-    const { charityData, donationsData, isLoading} = this.state;
+    const { charityData, donationsData, isLoading } = this.state;
     return (
 
       <div className="components__wrapper">
         <Header />
         {
-          isLoading ? <Loading loading={isLoading} /> :
-            <Main charityData={charityData} donationsData={donationsData} />
+          isLoading ? <Loading loading={isLoading} />
+            : <Main charityData={charityData} donationsData={donationsData} />
         }
       </div>
-    )
+    );
   }
 }
 
