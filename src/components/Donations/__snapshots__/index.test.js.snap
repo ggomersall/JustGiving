@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Donations Component Snapshot 1`] = `<Donations />`;
