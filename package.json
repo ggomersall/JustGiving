@@ -5,8 +5,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "babel-node ./node_modules/webpack/bin/webpack",
-    "start": "babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server --open",
+    "build": "npm run lint && babel-node ./node_modules/webpack/bin/webpack",
+    "start": "npm run lint && babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server --open",
     "lint": "eslint src/**/*.js"
   },
   "devDependencies": {
