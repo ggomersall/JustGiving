@@ -10,9 +10,10 @@ This is my test submission for the Front-End Developer role at JustGiving, to ge
 
 to install dependancies -- `$ yarn`
 
+to run tests -- `$ yarn test`
+
 to start the project -- `$ yarn start`
 
-to run tests -- `$ yarn test`
 
 ***********
 
