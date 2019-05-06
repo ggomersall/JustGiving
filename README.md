@@ -36,7 +36,7 @@ I've setup tests as well - this is the first time i've done this, so i'm hoping 
 3. To implement more tests, and to start building the tests before building the components - (i know i did it the wrong way around, but I wanted to get this finished before getting stuck on tests) 🙂
 
 
-**********
+
 **********
 
 Again, thank you in advance for taking the time to look at this test, and for giving me the opportunity to take part in this.
