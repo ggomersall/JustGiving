@@ -8,7 +8,8 @@
     "build": "npm run lint && babel-node ./node_modules/webpack/bin/webpack",
     "start": "npm run lint && babel-node ./node_modules/webpack-dev-server/bin/webpack-dev-server --open",
     "lint": "eslint src/**/*.js",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "npm run test -- --watchAll"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
