@@ -15,7 +15,7 @@ to run tests -- `$ yarn test`
 to start the project -- `$ yarn start`
 
 
-I really enjoyed working on this test as it gave me exposure to implementing tests for the various components (even though they mught not be 100% right), and it was just really fun to do.
+I really enjoyed working on this test as it gave me exposure to implementing tests for the various components (even though they might not be 100% right), and it was just really fun to do.
 
 ***********
 
